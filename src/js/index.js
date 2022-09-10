@@ -6,7 +6,7 @@ import ReactDOM from "react-dom";
 // include your styles into the webpack bundle
 import "../styles/index.css";
 
-function SimpleCounter(props){
+function SecondsCounter(props){
     return (
         <div className="bigContainer">
             <div className="icon"><i class="fa-regular fa-clock"></i></div>
@@ -21,7 +21,7 @@ function SimpleCounter(props){
     )
 };
 
-SimpleCounter.PropTypes = {
+SecondsCounter.PropTypes = {
     digSeis: propTypes.number,
     digCinco: propTypes.number,
     digCuatro: propTypes.number,
@@ -42,7 +42,7 @@ setInterval(function(){
 
     counter++;
     
-    ReactDOM.render(<SimpleCounter 
+    ReactDOM.render(<SecondsCounter 
     digUno={posUno}
     digDos={posDos}
     digTres={posTres}
