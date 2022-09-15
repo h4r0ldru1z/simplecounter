@@ -32,7 +32,9 @@ SecondsCounter.PropTypes = {
 
 let counter = 0;
 
+
 setInterval(function(){
+    
     const posSeis= Math.floor(counter/1000000);
     const posCinco= Math.floor(counter/100000);
     const posCuatro= Math.floor(counter/1000);
